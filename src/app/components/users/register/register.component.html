@@ -1,0 +1,35 @@
+<div class="contenedor">
+    <form action="action_page.php">
+        <div class="container">
+          <h1>Registrar Medico</h1>
+          <p>Por favor ingresa tus datos para crear tu Cuenta.</p>
+          <hr>
+      
+          <label for="name"><b>Nombre</b></label>
+          <input type="text" placeholder="Ingresa tu nombre" name="nombre" required>
+
+          <label for="apellido"><b>Apellido</b></label>
+          <input type="text" placeholder="Ingresa tu apellido" name="apellido" required>
+
+          <label for="rfc"><b>RFC</b></label>
+          <input type="text" placeholder="Ingresa tu RFC" name="rfc" required>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Ingresa tu Email" name="email" required>
+      
+          <label for="contra"><b>Contraseña</b></label>
+          <input type="password" placeholder="Ingresa tu Contraseña" name="contra" required>
+      
+          <label for="contra-r"><b>Repetir Contraseña</b></label>
+          <input type="password" placeholder="Vuelve a ingresar tu contraseña" name="contra-r" required>
+          <hr>
+      
+          <p>Al crear tu cuenta aceptas <a href="#">Terminos y Privacidad</a>.</p>
+          <button type="submit" class="registerbtn"><a routerLink="/"> Registrar </a></button>
+        </div>
+      
+        <div class="container signin">
+          <p>¿Ya tienes una cuenta? <a routerLink="/user/login"> Aqui </a>.</p>
+        </div>
+      </form>
+</div>
