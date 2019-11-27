@@ -1,5 +1,61 @@
-<header><app-barra-menu></app-barra-menu></header>
 <div class="fondo">
-    <p>calculadora works!</p>
-</div>
+        <header><app-barra-menu></app-barra-menu></header>    
+            <section id="formularios">
+                <div class="container">
+                    <div class="container-forms">
+                        <h1>Calculadora</h1>
+                        <h2>Realiza calculos esenciales para tu paciente.
+                        Obten datos personalizados a partir de la informacion de cada uno.</h2>
+                    </div>                                    
+                    <br>
+                    <div class="contenedor-formularios">
+                        
+                        <!--calculadora de IMC-->
+                        <div class="formularioColor color1">
+                            <h2>{{titulo}}</h2>
+                            <form>
+                                <div class="form-group">
+                                    <label>Altura : </label>
+                                    <input type="number" class="from-control" placeholder="Escribe la Altura" [(ngModel)]="Altura" name="Altura" >
+                                </div>
+                                <div class="form-group">
+                                        <label>Peso : </label>
+                                        <input type="number" class="from-control" placeholder="Escribe la Peso" [(ngModel)]="Peso" name="Peso" >
+                                </div>
+                                <button type="submit" class="btn btn-primary" (click)="onIMC()">  Calcular  </button>                                
+                            </form>                            
+                            <p>IMC del Paciente: {{resultado}} </p>
+                        </div>
+                        
+                        <!--calculadora de otro pex-->
+                        <div class="formularioColor color1">
+                                <h2>{{titulo2}}</h2>
+                                <form>                                    
+                                    <div class="form-group">
+                                            <label>Peso : </label>
+                                            <input type="number" class="from-control" placeholder="Escribe la Peso" [(ngModel)]="Peso" name="Peso" >
+                                    </div>
+                                    <button type="submit" class="btn btn-primary" (click)="onIMC()">  Calcular  </button>                                
+                                </form>                            
+                                <p>Indice de Grasa: {{resultado2}} </p>
+                        </div>
 
+                        <!--calculadora de IMC-->
+                        <div class="formularioColor color1">
+                            <h2>{{titulo3}}</h2>
+                            <form>                  
+                                <div class="form-group">
+                                        <label>Peso : </label>
+                                        <input type="number" class="from-control" placeholder="Escribe la Peso" [(ngModel)]="Peso" name="Peso" >
+                                </div>
+                                <button type="submit" class="btn btn-primary" (click)="onLitros()">  Calcular  </button>                                
+                            </form>                            
+                            <p>IMC del Paciente: {{resultado3}} </p>
+                        </div>
+
+                    </div>                
+                </div>
+            </section>    
+    </div>
+    
+    

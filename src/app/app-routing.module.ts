@@ -9,6 +9,8 @@ import { SubirdietaComponent } from './components/subirdieta/subirdieta.componen
 import { TipsComponent } from './components/tips/tips.component';
 import { CalculadoraComponent } from './components/calculadora/calculadora.component';
 import { HistorialPacienteComponent } from './components/pacientes/historial-paciente/historial-paciente.component';
+import { RegistrarPacienteComponent } from './components/pacientes/registrar-paciente/registrar-paciente.component';
+import { AgregarTipComponent } from './components/tips/agregar-tip/agregar-tip.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -19,7 +21,9 @@ const routes: Routes = [
   { path: 'subirdieta', component: SubirdietaComponent},
   { path: 'calculadora', component: CalculadoraComponent},
   { path: 'tips', component: TipsComponent},
-  { path: 'pacientes/historialPaciente', component: HistorialPacienteComponent}
+  { path: 'pacientes/historialPaciente', component: HistorialPacienteComponent},
+  { path: 'pacientes/registrar-paciente', component: RegistrarPacienteComponent},
+  { path: 'tips/agregar-tip', component: AgregarTipComponent}
 
 ];
 

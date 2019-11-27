@@ -1,0 +1,23 @@
+<body class="fondo">  
+        <app-barra-menu></app-barra-menu>
+            <div class="contenedor">
+              <form action="action_page.php">
+                  <div class="container">
+                    <h1>Agregar Tip</h1>
+                    <p>Escribe algun consejo que le quieras dar a tus Pacientes.</p>
+                    <hr>
+                
+                    <label for="tip"><b>Tip</b></label>
+                    <input type="text" placeholder="Ingresa el Tip" name="tip" required>                  
+                    
+                    <hr>
+                                
+                    <button type="submit" class="registerbtn"><a routerLink="/tips"> Agregar </a></button>
+                  </div>
+                
+                  <div class="container signin">
+                    <p> Regresar a <a routerLink="/tips"> Lista de Tips </a>.</p>
+                  </div>
+                </form>
+            </div>
+</body>

@@ -1,0 +1,32 @@
+<body class="fondo">  
+    <app-barra-menu></app-barra-menu>
+        <div class="contenedor">
+          <form action="action_page.php">
+              <div class="container">
+                <h1>Registrar Paciente</h1>
+                <p>Por favor ingresa tus datos del paciente.</p>
+                <hr>
+            
+                <label for="name"><b>Nombre</b></label>
+                <input type="text" placeholder="Ingresa el nombre" name="nombre" required>
+      
+                <label for="apellido"><b>Apellido</b></label>
+                <input type="text" placeholder="Ingresa el apellido" name="apellido" required>
+      
+                <label for="rfc"><b>RFC</b></label>
+                <input type="text" placeholder="Ingresa el RFC" name="rfc" required>
+      
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Ingresa el Email" name="email" required>            
+                
+                <hr>
+                            
+                <button type="submit" class="registerbtn"><a routerLink="/pacientes"> Registrar </a></button>
+              </div>
+            
+              <div class="container signin">
+                <p> Regresar a <a routerLink="/pacientes"> Lista de Pacientes </a>.</p>
+              </div>
+            </form>
+        </div>
+      </body>
